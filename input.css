@@ -1,0 +1,127 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    background-image: url('./images/bg.png');
+    background-repeat: no-repeat;
+    background-size: 800px;
+    background-position: 90% -25%;
+}
+
+.display-none {
+    @apply hidden
+}
+
+#cta {
+    background-image: url('../');
+    background-repeat: no-repeat;
+}
+
+
+@media (max-width: 576px) {
+    body {
+        background-position: 50px -50px;
+        background-size: 500px;
+    }
+
+    #cta {
+        background-image: url;
+    }
+}
+
+/* hamburger menu  */
+
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 2px;
+    background: #000;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+    transform: translateY(0px);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translate(6px);
+}
+
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translate(-6px);
+}
+
+.green h2 {
+    text-align: center;
+    color: green;
+}
+
+.all {
+    height: 507.837px;
+    width: 1280px;
+    border: 0px solid #D5D5D5;
+    margin: 0 120px 0 120px;
+    padding: 48px 16px 48px 16px;
+    min-height: auto;
+    max-width: 1280px;
+    min-width: auto;
+}
+
+.all img {
+    height: 411.837px;
+    width: 411.837px;
+    border: 2px solid #D5D5D5;
+    max-width: 100%;
+}
+
+.merge {
+    height: 411.837px;
+    width: 836.162px;
+    border: 2px solid #D5D5D5;
+    min-height: auto;
+    min-width: auto;
+    margin-top: -420px;
+    margin-left: 400px;
+}
+
+.merge h6 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 72px;
+    margin-left: 20px;
+    width: 100%;
+}
+
+.merge p {
+    height: 48px;
+    width: 740.162px;
+}
